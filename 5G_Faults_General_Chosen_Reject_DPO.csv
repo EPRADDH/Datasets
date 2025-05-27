@@ -1,0 +1,228 @@
+prompt,chosen,rejected
+UE Registration Failure with cause ngKSI already in use and high registration reject rate observed in AMF,"**Recommended investigative steps**
+(1) Check AMF security context management
+(2) Verify UE security capability handling
+(3) Examine authentication vector management in AUSF
+(4) Validate UDM subscription data
+(5) Restart affected AMF instance if persistent
+(6) Check for potential replay attacks by analyzing SUCI/SUPI allocation patterns",Check AMF security context management; verify UE security capability handling; examine authentication vector management in AUSF; validate UDM subscription data; restart affected AMF instance if persistent; check for potential replay attacks by analyzing SUCI/SUPI allocation patterns
+Periodic Registration Update timeout occurring for multiple subscribers in specific tracking area with RRC connection drops immediately following NAS Registration Accept message,"**Recommended investigative steps**
+(1) Analyze RRC connection statistics for affected gNBs
+(2) Verify N2 interface stability between gNB and AMF
+(3) Check AMF timer settings for registration update
+(4) Examine cell RF performance metrics for coverage gaps
+(5) Verify tracking area configuration in AMF
+(6) Check gNB CPU and memory utilization during peak registration periods",Analyze RRC connection statistics for affected gNBs; verify N2 interface stability between gNB and AMF; check AMF timer settings for registration update; examine cell RF performance metrics for coverage gaps; verify tracking area configuration in AMF; check gNB CPU and memory utilization during peak registration periods
+N2 Handover failures with cause Resource Unavailable predominantly during peak hours impacting VoNR calls,"**Recommended investigative steps**
+(1) Check target gNB resource allocation policies
+(2) Verify QoS flow admission control settings
+(3) Analyze PRB utilization in target cells
+(4) Examine UE radio capabilities handling; check AMF load balancing configuration
+(5) Verify NG-RAN resource status in target node
+(6) Monitor N2 interface congestion metrics
+(7) Analyze E2E network slicing QoS guarantees for voice slices",Check target gNB resource allocation policies; verify QoS flow admission control settings; analyze PRB utilization in target cells; examine UE radio capabilities handling; check AMF load balancing configuration; verify NG-RAN resource status in target node; monitor N2 interface congestion metrics; analyze E2E network slicing QoS guarantees for voice slices
+Registration Reject with NAS cause PLMN not allowed for roaming subscribers despite valid roaming agreements,"**Recommended investigative steps**
+(1) Verify PLMN configuration in AMF
+(2) Check UDM roaming authorization settings
+(3) Examine security context exchange with home network
+(4) Validate NSSAI mapping for roaming subscribers
+(5) Check NRF service discovery for roaming interfaces
+(6) Verify diameter routing agent configuration
+(7) Test SEPP security policies
+(8) Check for HPLMN identifier mismatches",Verify PLMN configuration in AMF; check UDM roaming authorization settings; examine security context exchange with home network; validate NSSAI mapping for roaming subscribers; check NRF service discovery for roaming interfaces; verify diameter routing agent configuration; test SEPP security policies; check for HPLMN identifier mismatches
+PDU Session Establishment failures for data sessions during mobility with SM cause insufficient resources,"**Recommended investigative steps**
+(1) Check SMF dimensioning and capacity
+(2) Verify UPF resource allocation
+(3) Examine PCF policies for affected data flows
+(4) Analyze NSSAI to S-NSSAI mapping
+(5) Check QoS profile configurations
+(6) Monitor UPF CPU and memory utilization
+(7) Verify PFCP association between SMF and UPF
+(8) Analyze N4 interface stability during mobility events",Check SMF dimensioning and capacity; verify UPF resource allocation; examine PCF policies for affected data flows; analyze NSSAI to S-NSSAI mapping; check QoS profile configurations; monitor UPF CPU and memory utilization; verify PFCP association between SMF and UPF; analyze N4 interface stability during mobility events
+UE reported No Network Service after successful registration in areas with good coverage and RSRP values better than -90dBm,"**Recommended investigative steps**
+(1) Check PDU session state management
+(2) Verify APN configuration in UDM
+(3) Examine DNS resolution for data services
+(4) Analyze DNN configuration in SMF
+(5) Verify DNAI selection in UPF
+(6) Check application detection rules
+(7) Analyze protocol configuration options
+(8) Verify default QoS rule enforcement
+(9) Check UE NAS capability handling",Check PDU session state management; verify APN configuration in UDM; examine DNS resolution for data services; analyze DNN configuration in SMF; verify DNAI selection in UPF; check application detection rules; analyze protocol configuration options; verify default QoS rule enforcement; check UE NAS capability handling
+PDU Session modification failures during QoS flow addition with SM cause service option temporarily out of order,"**Recommended investigative steps**
+(1) Check SMF QoS management function
+(2) Verify PCF policy decision points
+(3) Examine dynamic PCC rule creation
+(4) Analyze binding mechanisms between QoS flows and DRBs
+(5) Verify correct QFI assignment
+(6) Check RAN notification of QoS flow establishment
+(7) Verify UPF capability to support additional QoS flows
+(8) Examine QoS monitoring mechanisms,Check SMF QoS management function; verify PCF policy decision points; examine dynamic PCC rule creation; analyze binding mechanisms between QoS flows and DRBs; verify correct QFI assignment; check RAN notification of QoS flow establishment; verify UPF capability to support additional QoS flows; examine QoS monitoring mechanisms
+GUTI reallocation failures with AMF reporting Old GUTI not recognized causing additional authentication procedures,**Recommended investigative steps**
+(1) Verify GUTI allocation algorithm in AMF
+(2) Check temporary identifier management
+(3) Examine context data storage duration
+(4) Analyze AMF restart recovery procedures
+(5) Verify GUTI reallocation frequency
+(6) Check UE identity request/response procedures
+(7) Examine NAS signaling connection management
+(8) Verify AMF context data persistence mechanisms",Verify GUTI allocation algorithm in AMF; check temporary identifier management; examine context data storage duration; analyze AMF restart recovery procedures; verify GUTI reallocation frequency; check UE identity request/response procedures; examine NAS signaling connection management; verify AMF context data persistence mechanisms
+Session management back-off timer excessively triggered for corporate APNs with high congestion control activation,"**Recommended investigative steps**
+(1) Verify SMF dimensioning for corporate DNNs
+(2) Check NSSAI capacity planning
+(3) Examine PCF congestion control policies
+(4) Analyze SMF overload control thresholds
+(5) Verify UPF capacity for enterprise traffic
+(6) Check back-off timer values configuration
+(7) Examine load balancing across SMF instances
+(8) Verify proper logging of congestion control events
+(9) Analyze traffic patterns triggering congestion",Verify SMF dimensioning for corporate DNNs; check NSSAI capacity planning; examine PCF congestion control policies; analyze SMF overload control thresholds; verify UPF capacity for enterprise traffic; check back-off timer values configuration; examine load balancing across SMF instances; verify proper logging of congestion control events; analyze traffic patterns triggering congestion
+Network slice specific authentication failures despite successful primary authentication,"**Recommended investigative steps**
+(1) Verify slice specific authentication configuration
+(2) Check Re-authentication indicator handling
+(3) Examine NSSF slice selection function
+(4) Analyze AAA server integration for enterprise slices
+(5) Verify EAP-AKA' implementation
+(6) Check secondary authentication procedure
+(7) Examine slice specific credentials management
+(8) Verify secondary authorization data in UDM
+(9) Analyze secondary authentication timeout handling",Verify slice specific authentication configuration; check Re-authentication indicator handling; examine NSSF slice selection function; analyze AAA server integration for enterprise slices; verify EAP-AKA' implementation; check secondary authentication procedure; examine slice specific credentials management; verify secondary authorization data in UDM; analyze secondary authentication timeout handling
+Frequent PDU session release with cause due to UE generated NAS signaling connection release for IoT devices,"**Recommended investigative steps**
+(1) Check UE power saving mode configuration
+(2) Verify extended DRX settings for IoT
+(3) Examine session release timer settings
+(4) Analyze keepalive mechanism implementation
+(5) Verify TCP optimization for IoT traffic
+(6) Check application behavior patterns
+(7) Examine mobile terminated data handling
+(8) Verify UPF buffering capabilities
+(9) Analyze IoT platform integration with network functions",Check UE power saving mode configuration; verify extended DRX settings for IoT; examine session release timer settings; analyze keepalive mechanism implementation; verify TCP optimization for IoT traffic; check application behavior patterns; examine mobile terminated data handling; verify UPF buffering capabilities; analyze IoT platform integration with network functions
+Network rejected PDU session establishment with SM cause insufficient user-plane resources at the UPF despite capacity planning,"**Recommended investigative steps**
+(1) Verify UPF dimensioning for user plane traffic
+(2) Check UPF selection mechanism
+(3) Examine load balancing across UPF instances
+(4) Analyze UPF user plane processing capacity
+(5) Verify GTP-U tunnel establishment
+(6) Check N4 interface PFCP association
+(7) Examine resource reporting accuracy
+(8) Verify SMF monitoring of UPF resources
+(9) Analyze traffic forecasting accuracy
+(10) Check UPF scaling mechanisms and triggers",Verify UPF dimensioning for user plane traffic; check UPF selection mechanism; examine load balancing across UPF instances; analyze UPF user plane processing capacity; verify GTP-U tunnel establishment; check N4 interface PFCP association; examine resource reporting accuracy; verify SMF monitoring of UPF resources; analyze traffic forecasting accuracy; check UPF scaling mechanisms and triggers
+S_NSSAI configuration mismatch between UE and AMF,"**Recommended investigative steps**
+(1) Check UE requested NSSAI configuration
+(2) Verify AMF configured NSSAI list
+(3) Validate mapping between requested and configured NSSAIs
+(4) Review subscription data in UDM for allowed slices
+(5) Update configuration accordingly in AMF or UE",Check UE requested NSSAI configuration; Verify AMF configured NSSAI list; Validate mapping between requested and configured NSSAIs; Review subscription data in UDM for allowed slices; Update configuration accordingly in AMF or UE
+Excessive resource allocation to eMBB slice causing URLLC slice starvation,"**Recommended investigative steps**
+(1) Analyze resource utilization across all slices
+(2) Adjust resource quota configured for eMBB slice
+(3) Implement stricter admission control for eMBB slice
+(4) Configure priority levels correctly between slices
+(5) Update scheduler parameters to ensure URLLC slice gets adequate resources",Analyze resource utilization across all slices; Adjust resource quota configured for eMBB slice; Implement stricter admission control for eMBB slice; Configure priority levels correctly between slices; Update scheduler parameters to ensure URLLC slice gets adequate resources
+Slice specific QoS flow establishment failure,"**Recommended investigative steps**
+(1) Check QoS profile configuration in PCF
+(2) Verify UE QoS capabilities support
+(3) Examine SMF to UPF communication for QoS flow setup
+(4) Analyze RAN configuration for QoS enforcement
+(5) Reconfigure QoS parameters and retry flow establishment",Check QoS profile configuration in PCF; Verify UE QoS capabilities support; Examine SMF_to_UPF communication for QoS flow setup; Analyze RAN configuration for QoS enforcement; Reconfigure QoS parameters and retry flow establishment
+Throughput degradation in eMBB slice despite sufficient resource allocation,"**Recommended investigative steps**
+(1) Analyze packet loss metrics from UPF probes
+(2) Check transport network capacity between RAN and UPF
+(3) Verify radio conditions of affected users
+(4) Examine DL scheduler efficiency in gNB
+(5) Optimize TCP parameters for the UPF handling the eMBB slice",Analyze packet loss metrics from UPF probes; Check transport network capacity between RAN and UPF; Verify radio conditions of affected users; Examine DL scheduler efficiency in gNB; Optimize TCP parameters for the UPF handling the eMBB slice
+Slice specific PDU session establishment failure,"**Recommended investigative steps**
+(1) Verify SMF selection process for the specific slice
+(2) Check UE subscription for the requested slice
+(3) Analyze AMF to SMF interface for session establishment errors
+(4) Examine PCF policy decision for session rejection
+(5) Update slice specific session management policy",Verify SMF selection process for the specific slice; Check UE subscription for the requested slice; Analyze AMF to SMF interface for session establishment errors; Examine PCF policy decision for session rejection; Update slice specific session management policy
+Edge computing resources not properly allocated to URLLC slice,"**Recommended investigative steps**
+(1) Verify edge resource allocation policies
+(2) Check MEC platform integration with slice management
+(3) Analyze application placement decisions
+(4) Update edge resource reservation for URLLC traffic
+(5) Implement stricter SLA enforcement for edge computing",Verify edge resource allocation policies; Check MEC platform integration with slice management; Analyze application placement decisions; Update edge resource reservation for URLLC traffic; Implement stricter SLA enforcement for edge computing
+VoLTE call drops immediately after 5G to 4G handover with SIP 503 Service Unavailable error from IMS,"**Recommended investigative steps**
+(1) Verify IMS session continuity function is properly configured
+(2) Check S-CSCF capacity and session handling capability during peak loads
+(3) Analyze Rx interface between P-CSCF and PCRF/PCF for bearer setup failures
+(4) Ensure DNS resolution for IMS services is functioning correctly
+(5) Monitor P-CSCF logs for timeout patterns and increase SIP timers if needed
+(6) Check HSS subscriber profile for VoLTE service authorization flags",Verify IMS session continuity function is properly configured. Check S-CSCF capacity and session handling capability during peak loads. Analyze Rx interface between P-CSCF and PCRF/PCF for bearer setup failures. Ensure DNS resolution for IMS services is functioning correctly. Monitor P-CSCF logs for timeout patterns and increase SIP timers if needed. Check HSS subscriber profile for VoLTE service authorization flags.
+Multiple VoLTE call drops during busy hour with AMF reporting 'UE Context Release Command' with cause 'Radio Connection With UE Lost' during 5G to 4G handover,"**Recommended investigative steps**
+(1) Analyze cell load metrics during busy hour to identify potential congestion issues
+(2) Check handover parameter settings between NR and LTE cells
+(3) Verify radio link monitoring configurations in gNB
+(4) Examine RF optimization in handover zones
+(5) Check for external interference sources using spectrum analyzer
+(6) Consider staggered busy hour handover prioritization for VoLTE sessions
+(7) Review neighbor relation tables for missing or incorrectly configured neighbors",Analyze cell load metrics during busy hour to identify potential congestion issues. Check handover parameter settings between NR and LTE cells. Verify radio link monitoring configurations in gNB. Examine RF optimization in handover zones. Check for external interference sources using spectrum analyzer. Consider staggered busy hour handover prioritization for VoLTE sessions. Review neighbor relation tables for missing or incorrectly configured neighbors.
+SIP session timer expiration during EPS fallback procedure resulting in VoLTE call termination before handover completion,"**Recommended investigative steps**
+(1) Review SIP session timer values in P-CSCF and increase minimum timer value to account for EPSFB latency
+(2) Check EPSFB procedure delays by monitoring N26 interface messages
+(3) Verify SMF to PGW-C session continuity handling
+(4) Analyze RRC reconfiguration delays in UE
+(5) Consider implementing early media handling for EPSFB cases
+(6) Check IMS session refresh procedures during mobility events",Review SIP session timer values in P-CSCF and increase minimum timer value to account for EPSFB latency. Check EPSFB procedure delays by monitoring N26 interface messages. Verify SMF to PGW-C session continuity handling. Analyze RRC reconfiguration delays in UE. Consider implementing early media handling for EPSFB cases. Check IMS session refresh procedures during mobility events.
+Voice bearer establishment delay exceeding 3 seconds after successful 5G to 4G handover,"**Recommended investigative steps**
+(1) Check Rx interface performance between P-CSCF and PCRF
+(2) Verify bearer establishment signaling flow in EPC
+(3) Analyze PCC rule installation timing in PGW
+(4) Review dedicated bearer activation procedures in SGW/PGW
+(5) Check for policy decision delays in PCRF during busy periods
+(6) Implement bearer establishment timing analysis for post-handover scenarios
+(7) Consider pre-establishing voice bearers during handover preparation phase",Check Rx interface performance between P-CSCF and PCRF. Verify bearer establishment signaling flow in EPC. Analyze PCC rule installation timing in PGW. Review dedicated bearer activation procedures in SGW/PGW. Check for policy decision delays in PCRF during busy periods. Implement bearer establishment timing analysis for post-handover scenarios. Consider pre-establishing voice bearers during handover preparation phase.
+URLLC slice users experiencing jitter values exceeding 10ms despite proper QoS configuration,"**Recommended investigative steps**
+(1) Verify packet scheduling configuration at UPF for URLLC traffic
+(2) Check clock synchronization accuracy across network nodes
+(3) Analyze transmission time interval variations at PHY layer
+(4) Monitor preemption indicator utilization
+(5) Examine buffer status report handling at MAC layer
+(6) Resolution often involves optimizing packet scheduling algorithms and fine-tuning preemption mechanisms",Verify packet scheduling configuration at UPF for URLLC traffic; Check clock synchronization accuracy across network nodes; Analyze transmission time interval variations at PHY layer; Monitor preemption indicator utilization; Examine buffer status report handling at MAC layer; Resolution often involves optimizing packet scheduling algorithms and fine-tuning preemption mechanisms
+Emergency services experiencing call setup latency spikes during network congestion events,"**Recommended investigative steps**
+(1) Check access class barring exemption configuration
+(2) Verify emergency service flow priority marking
+(3) Analyze preemption capability for emergency sessions
+(4) Monitor resource allocation during congestion
+(5) Examine ARP settings for emergency bearers
+(6) Resolution includes implementing stronger preemption for emergency services or adjusting overload control parameters",Check access class barring exemption configuration; Verify emergency service flow priority marking; Analyze preemption capability for emergency sessions; Monitor resource allocation during congestion; Examine ARP settings for emergency bearers; Resolution includes implementing stronger preemption for emergency services or adjusting overload control parameters
+SUCI to SUPI translation failure in AUSF logs with error code 5001. UE authentication requests increasing but successful authentications decreasing.,"**Recommended investigative steps**
+(1) Check UDM connectivity and SUPI generation rules
+(2) Verify HSS to UDM migration data integrity
+(3) Inspect AUSF logs for specific SUCI format errors
+(4) May require updating authentication algorithms or fixing subscriber key provisioning in UDM",Check UDM connectivity and SUPI generation rules. Verify HSS to UDM migration data integrity. Inspect AUSF logs for specific SUCI format errors. May require updating authentication algorithms or fixing subscriber key provisioning in UDM.
+Guaranteed Bit Rate QoS flows failing to establish with SMF error GBR resources not available despite sufficient network capacity.,"**Recommended investigative steps**
+(1) Check subscriber GBR entitlement in UDM
+(2) Verify slice resource quotas
+(3) Inspect RAN capacity allocation
+(4) Consider updating subscription QoS parameters or optimizing resource allocation for GBR services",Check subscriber GBR entitlement in UDM. Verify slice resource quotas. Inspect RAN capacity allocation. Consider updating subscription QoS parameters or optimizing resource allocation for GBR services.
+What is 5G Standalone (SA) architecture?,"**5G Standalone (SA)**
+>5G Standalone (SA) is a true 5G deployment with both a 5G Radio Access Network (RAN) and a cloud-native 5G Core that operates independently from legacy 4G infrastructure. It enables features such as ultra-low latency; improved performance; and supports all three 5G use cases: enhanced mobile broadband; massive machine-type communications; and ultra-reliable low-latency communications.",5G Standalone (SA) is a true 5G deployment with both a 5G Radio Access Network (RAN) and a cloud-native 5G Core; operating independently from legacy 4G infrastructure. It enables features such as ultra-low latency; improved performance; and supports all three 5G use cases: enhanced mobile broadband; massive machine-type communications; and ultra-reliable low-latency communications.
+What happens if the 5G Standalone architecture components do not perform properly?,"**5G Standalone (SA) Failure**
+>Failure or poor performance of 5G SA components can cause service disruptions; signaling storms; degraded user experience; increased latency; or even network-wide outages. For example; signaling storms or overloaded nodes can slow down or block control plane transactions; impacting all users and services.",Failure or poor performance of 5G SA components can cause service disruptions; signaling storms; degraded user experience; increased latency; or even network-wide outages. For example; signaling storms or overloaded nodes can slow down or block control plane transactions; impacting all users and services[1][2].
+What are Cloud-Native Network Functions (CNFs) in 5G?,"**CNFs in 5G**
+>CNFs in 5G are network functions designed using cloud-native principles like containerization; microservices; and automated orchestration. These allow for scalable; resilient; and flexible deployment and management of network services.",CNFs in 5G are network functions designed using cloud-native principles like containerization; microservices; and automated orchestration. These allow for scalable; resilient; and flexible deployment and management of network services.
+What happens if 5G CNFs do not perform properly?,"**CNFs not working proporly**
+>If CNFs experience failures such as node reboot; pod failure; packet loss; or high latency; critical services may be interrupted; leading to dropped sessions; failed authentications; or loss of connectivity for users and devices.",If CNFs experience failures such as node reboot; pod failure; packet loss; or high latency; critical services may be interrupted; leading to dropped sessions; failed authentications; or loss of connectivity for users and devices[5].
+What is the function of the AMF (Access and Mobility Management Function)?,"**Access and Mobility Function (AMF)**
+>The AMF manages user access and mobility; including registration; connection; reachability; mobility management; access authentication; and NAS security. It is the central control hub for control plane signaling between the RAN and the 5G Core.",The AMF manages user access and mobility; including registration; connection; reachability; mobility management; access authentication; and NAS security. It is the central control hub for control plane signaling between the RAN and the 5G Core.
+What happens if the AMF does not perform properly?,"**AMF failure**
+>If the AMF fails or is overloaded; user equipment (UE) may not be able to register; authenticate; or maintain mobility; resulting in service loss or inability to connect. However; the gNB can switch to another AMF to maintain service continuity; ensuring high availability if redundancy is configured.",If the AMF fails or is overloaded; user equipment (UE) may not be able to register; authenticate; or maintain mobility; resulting in service loss or inability to connect. However; the gNB can switch to another AMF to maintain service continuity; ensuring high availability if redundancy is configured[7].
+What are the key parameters or configurations managed by the AMF?,"**AMF key parameters**
+>AMF manages NAS signaling; registration state; connection state; mobility context; security context; and interfaces to SMF; UDM; AUSF; and NSSF.",AMF manages NAS signaling; registration state; connection state; mobility context; security context; and interfaces to SMF; UDM; AUSF; and NSSF.
+What is the function of the SMF (Session Management Function)?,"**Session Management Function**
+>The SMF handles session management; including session establishment; modification; release; IP address allocation; UPF selection; policy enforcement; and QoS management.",The SMF handles session management; including session establishment; modification; release; IP address allocation; UPF selection; policy enforcement; and QoS management.
+What happens if the SMF does not perform properly?,"**SMF failure**
+If the SMF fails or becomes unresponsive; session establishment or modification may fail; leading to dropped data sessions; loss of connectivity; or inability to allocate IP addresses. High CPU usage or memory issues in SMF can cause it to stop responding; resulting in session failures and degraded service.",If the SMF fails or becomes unresponsive; session establishment or modification may fail; leading to dropped data sessions; loss of connectivity; or inability to allocate IP addresses. High CPU usage or memory issues in SMF can cause it to stop responding; resulting in session failures and degraded service[2][3].
+What are the key parameters or configurations managed by the SMF?,"**SMF key parameters**
+>SMF manages session context; IP address pools; UPF selection; policy and charging rules; QoS parameters; and session state.",SMF manages session context; IP address pools; UPF selection; policy and charging rules; QoS parameters; and session state.
+SMF selection failure by AMF;AMF could not find an appropriate SMF via NRF (no response or no matching profile); SMF not registered for requested slice or DNN,"**Recommended investigative steps**
+(1) Ensure SMF is registered in NRF with correct slice/DNN info
+(2) Update SMF's NF profile as needed
+(3) Verify NSSF is providing correct guidance to AMF",Ensure SMF is registered in NRF with correct slice/DNN info; update SMF's NF profile as needed; verify NSSF is providing correct guidance to AMF
+SMF not releasing resources after handover;UE moved to new AMF/SMF but old SMF kept session; context transfer failed; bug in inter-SMF procedure,"**Recommended investigative steps**
+(1) Manually remove stale session from old SMF
+(2) Investigate inter-SMF handover logs
+(3) Ensure proper configuration for context transfer or use full re-establishment",Manually remove stale session from old SMF; investigate inter-SMF handover logs; ensure proper configuration for context transfer or use full re-establishment
